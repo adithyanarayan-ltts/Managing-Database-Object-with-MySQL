@@ -1,0 +1,39 @@
+create table sample( id int primary key, name varchar(25), age int);
+
+delimiter  $$
+create procedure insertdetails()
+begin 
+declare i int;
+set i = 1;
+while i<=5 do
+	insert into sample(id,name,age) values(i, concat('person_',i), 20);
+	set i=i+1;
+end while;
+end $$
+delimiter ;
+
+call insertdetails();
+
+delimiter  $$
+create procedure insertdetails2()
+begin 
+declare i int;
+set i = 6;
+while i<=10 do
+	if (mod(i,2) =0) then insert into sample(id,name,age) values(i, concat('person_',i), 21);
+    end if;
+	set i=i+1;
+end while;
+end $$
+delimiter ;
+
+call insertdetails2();
+
+delimiter  $$
+create procedure getdetails()
+begin 
+	select id,name from sample;
+end $$
+delimiter ;
+call getdetails();
+drop table sample;
