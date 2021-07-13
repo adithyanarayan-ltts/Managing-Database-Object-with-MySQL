@@ -1,7 +1,7 @@
 ###  Advanced Queries using 2 tables
 1. Write the query to display productionid, production name with total number movies produced by each.
 
-    Ans. `select productions.Productionid, Productionname, count(Productionname) as count from movie inner join productions where productions.Productionid=movie.Productionid group by movie.Productionid order by movie.Productionid;`
+    Ans. ```select productions.Productionid, Productionname, count(Productionname) as count from movie inner join productions where productions.Productionid=movie.Productionid group by movie.Productionid order by movie.Productionid;```
     
     ![](/Images/AS1.PNG)
 
