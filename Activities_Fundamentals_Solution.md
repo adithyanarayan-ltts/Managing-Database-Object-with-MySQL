@@ -4,7 +4,7 @@
     
     Ans. Select Moviename, Movietype from movie where Movietype like “Drama%”;
 
-    ![](/SQL%20Activities/Images/S1.PNG)
+    ![](\SQL%20Activities\Images\S1.PNG)
 2.	Display the movies acted by actor Ayushmann.
 
     Ans. Select * from movie where Heroname = “Ayushmann”;
