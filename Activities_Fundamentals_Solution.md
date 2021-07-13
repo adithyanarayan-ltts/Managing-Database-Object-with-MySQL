@@ -74,4 +74,6 @@
     
 13.	Display the movienames whose production id is same for different languages.
     
-    Ans. 
+    Ans. `select moviename, language, productionid from movie where productionid in (select productionid from movie group by productionid having count(distinct language)>1) order by productionid;`
+
+    ![](/Images/S13.PNG)
