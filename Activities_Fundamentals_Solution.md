@@ -55,10 +55,9 @@
     
 10.	 Display the release date of the movie name ‘Zero’.
     
-    Ans. select Releasedate from movie where Moviename = "Zero";
-
-    ![](/Images/S10.PNG)
-    
+     Ans. select Releasedate from movie where Moviename = "Zero"; 
+     
+     ![](/Images/S10.PNG)
 11.	Display the actor name that acted with ‘Amy’.
     
     Ans. select Heroname from movie where Heroine = "Amy";
